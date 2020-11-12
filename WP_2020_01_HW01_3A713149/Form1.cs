@@ -36,8 +36,8 @@ namespace WP_2020_01_HW01_3A713149
 
             var str = tbinput.Text;
             var md5 = str.ToMD5();
-            rtboutput.Text = md5;
-
+            rtboutput.Text = "你的幸運編號:\n" + md5.Substring(2,3)+"\n";
+            //rtboutput.Text += md5;
 
         }
     }
